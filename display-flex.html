@@ -1,0 +1,305 @@
+<html>
+	<head>
+		<style>
+			.examples {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.example {
+				width: 425px;
+				height: 350px;
+				margin: 15px;
+				border: 1px solid black;
+				border-radius: 25px;
+			}
+			.box {
+				display: flex;
+				height: 250px;
+				margin: 20px;
+				background: lightgrey;
+			}
+			.item {
+				padding: 6px;
+				background: lightblue;
+				border: 1px solid black;
+			}
+
+			ul {list-style: none}
+		</style>
+	</head>
+
+	<body>
+		<h1>display: flex / flex-inline</h1>
+		<div class="examples">
+			<div class="example">
+				<div class="box">
+					<div class="item">item1</div>
+					<div class="item">item2</div>
+					<div class="item">item3</div>
+					<div class="item">item4</div>
+				</div>
+				<ul>
+					<li>display: flex;</li>
+				</ul>
+			</div>
+			<div class="example">
+				<div class="box" style="display: inline-flex">
+					<div class="item">item1</div>
+					<div class="item">item2</div>
+					<div class="item">item3</div>
+					<div class="item">item4</div>
+				</div>
+				<ul>
+					<li>display: inline-flex;</li>
+				</ul>
+			</div>
+		</div>
+
+		<h1>flex-direction</h1>
+		<div class="examples">
+			<div class="example">
+				<div class="box" style="flex-direction: row">
+					<div class="item">item1</div>
+					<div class="item">item2</div>
+					<div class="item">item3</div>
+					<div class="item">item4</div>
+				</div>
+				<ul>
+					<li>display: flex;</li>
+					<li>flex-direction: row; (default)</li>
+				</ul>
+			</div>
+			<div class="example">
+				<div class="box" style="flex-direction: row-reverse">
+					<div class="item">item1</div>
+					<div class="item">item2</div>
+					<div class="item">item3</div>
+					<div class="item">item4</div>
+				</div>
+				<ul>
+					<li>display: flex;</li>
+					<li>flex-direction: row-reverse;</li>
+				</ul>
+			</div>
+			<div class="example">
+				<div class="box" style="flex-direction: column">
+					<div class="item">item1</div>
+					<div class="item">item2</div>
+					<div class="item">item3</div>
+					<div class="item">item4</div>
+				</div>
+				<ul>
+					<li>display: flex;</li>
+					<li>flex-direction: column;</li>
+				</ul>
+			</div>
+			<div class="example">
+				<div class="box" style="flex-direction: column-reverse">
+					<div class="item">item1</div>
+					<div class="item">item2</div>
+					<div class="item">item3</div>
+					<div class="item">item4</div>
+				</div>
+				<ul>
+					<li>display: flex;</li>
+					<li>flex-direction: column-reverse;</li>
+				</ul>
+			</div>
+		</div>
+
+		<h1>flex-wrap</h1>
+		<div class="examples">
+			<div class="example">
+				<div class="box" style="flex-wrap: nowrap">
+					<div class="item">item1</div>
+					<div class="item">item2</div>
+					<div class="item">item3</div>
+					<div class="item">item4</div>
+					<div class="item">item5</div>
+					<div class="item">item6</div>
+					<div class="item">item7</div>
+					<div class="item">item8</div>
+				</div>
+				<ul>
+					<li>display: flex;</li>
+					<li>flex-wrap: nowrap; (default)</li>
+				</ul>
+			</div>
+			<div class="example">
+				<div class="box" style="flex-wrap: wrap">
+					<div class="item">item1</div>
+					<div class="item">item2</div>
+					<div class="item">item3</div>
+					<div class="item">item4</div>
+					<div class="item">item5</div>
+					<div class="item">item6</div>
+					<div class="item">item7</div>
+					<div class="item">item8</div>
+					<div class="item">item9</div>
+					<div class="item">item10</div>
+					<div class="item">item11</div>
+					<div class="item">item12</div>
+				</div>
+				<ul>
+					<li>display: flex;</li>
+					<li>flex-wrap: wrap;</li>
+				</ul>
+			</div>
+			<div class="example">
+				<div class="box" style="flex-wrap: wrap-reverse">
+					<div class="item">item1</div>
+					<div class="item">item2</div>
+					<div class="item">item3</div>
+					<div class="item">item4</div>
+					<div class="item">item5</div>
+					<div class="item">item6</div>
+					<div class="item">item7</div>
+					<div class="item">item8</div>
+					<div class="item">item9</div>
+					<div class="item">item10</div>
+					<div class="item">item11</div>
+					<div class="item">item12</div>
+				</div>
+				<ul>
+					<li>display: flex;</li>
+					<li>flex-wrap: wrap-reverse;</li>
+				</ul>
+			</div>
+		</div>
+
+		<h1>justify-content</h1>
+		<div class="examples">
+			<div class="example">
+					<div class="box" style="justify-content: flex-start">
+					<div class="item">item1</div>
+					<div class="item">item2</div>
+					<div class="item">item3</div>
+					<div class="item">item4</div>
+				</div>
+				<ul>
+					<li>display: flex;</li>
+					<li>justify-content: flex-start; (default)</li>
+				</ul>
+			</div>
+			<div class="example">
+					<div class="box" style="justify-content: flex-end">
+					<div class="item">item1</div>
+					<div class="item">item2</div>
+					<div class="item">item3</div>
+					<div class="item">item4</div>
+				</div>
+				<ul>
+					<li>display: flex;</li>
+					<li>justify-content: flex-end;</li>
+				</ul>
+			</div>
+			<div class="example">
+					<div class="box" style="justify-content: center">
+					<div class="item">item1</div>
+					<div class="item">item2</div>
+					<div class="item">item3</div>
+					<div class="item">item4</div>
+				</div>
+				<ul>
+					<li>display: flex;</li>
+					<li>justify-content: center;</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="examples">
+			<div class="example">
+					<div class="box" style="justify-content: space-between">
+					<div class="item">item1</div>
+					<div class="item">item2</div>
+					<div class="item">item3</div>
+					<div class="item">item4</div>
+				</div>
+				<ul>
+					<li>display: flex;</li>
+					<li>justify-content: space-between;</li>
+				</ul>
+			</div>
+			<div class="example">
+					<div class="box" style="flex-direction: column; justify-content: space-between">
+					<div class="item">item1</div>
+					<div class="item">item2</div>
+					<div class="item">item3</div>
+					<div class="item">item4</div>
+				</div>
+				<ul>
+					<li>display: flex;</li>
+					<li>flex-direction: column;</li>
+					<li>justify-content: space-between;</li>
+				</ul>
+			</div>
+			<div class="example">
+					<div class="box" style="justify-content: space-around">
+					<div class="item">item1</div>
+					<div class="item">item2</div>
+					<div class="item">item3</div>
+					<div class="item">item4</div>
+				</div>
+				<ul>
+					<li>display: flex;</li>
+					<li>justify-content: space-around;</li>
+				</ul>
+			</div>
+			<div class="example">
+					<div class="box" style="flex-direction: column; justify-content: space-around">
+					<div class="item">item1</div>
+					<div class="item">item2</div>
+					<div class="item">item3</div>
+					<div class="item">item4</div>
+				</div>
+				<ul>
+					<li>display: flex;</li>
+					<li>flex-direction: column;</li>
+					<li>justify-content: space-around;</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<h1>align-items</h1>
+		<div class="examples">
+			<div class="example">
+				<div class="box" style="align-items: flex-start">
+					<div class="item" style="height: 100px">height 100px</div>
+					<div class="item" style="height: 80px">height 80px</div>
+					<div class="item" style="height: 60px">height 60px</div>
+					<div class="item" style="height: 40px">height 40px</div>
+				</div>
+				<ul>
+					<li>display: flex;</li>
+					<li>align-items: flex-start; (default)</li>
+				</ul>
+			</div>
+			<div class="example">
+				<div class="box" style="align-items: flex-end">
+					<div class="item" style="height: 100px">height 100px</div>
+					<div class="item" style="height: 80px">height 80px</div>
+					<div class="item" style="height: 60px">height 60px</div>
+					<div class="item" style="height: 40px">height 40px</div>
+				</div>
+				<ul>
+					<li>display: flex;</li>
+					<li>align-items: flex-end;</li>
+				</ul>
+			</div>
+			<div class="example">
+				<div class="box" style="align-items: center">
+					<div class="item" style="height: 100px">height 100px</div>
+					<div class="item" style="line-height: 80px">height 80px</div>
+					<div class="item" style="height: 60px">height 60px</div>
+					<div class="item" style="height: 40px">height 40px</div>
+				</div>
+				<ul>
+					<li>display: flex;</li>
+					<li>align-items: center;</li>
+				</ul>
+			</div>
+		</div>
+
+	</body>
+</html>
